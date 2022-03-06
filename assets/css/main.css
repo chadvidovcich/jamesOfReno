@@ -2704,13 +2704,14 @@ input, select, textarea {
 
 /* Header */
 
+
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
 		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
-		color: rgba(255, 255, 255, 0.8);
+		color: rgba(255, 255, 255, 0.9);
 		padding: 10em 0 20em 0;
 		position: relative;
 		text-align: center;
@@ -2796,12 +2797,12 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		background-color: #f61d12;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
 		background-size: 3200px 460px;
-		color: rgba(255, 255, 255, 0.8);
+		color: rgba(255, 255, 255, 0.9);
 		/*
 				Since the SVG background occupies a lot of vertical space, we'll
 				add additional top padding (to move our content out of its way)
@@ -3222,6 +3223,15 @@ input, select, textarea {
 				padding: 2em 0 2em 0;
 			}
 
+	}
+
+	#quoteNameJustifyRight {
+		text-align: right;
+	}
+
+	.logoImg {
+		max-width: 40%;
+		border-radius: 1em;
 	}
 
 /* Mobile (Portrait) */
