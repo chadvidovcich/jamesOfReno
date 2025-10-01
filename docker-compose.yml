@@ -1,0 +1,17 @@
+services:
+  james-of-reno:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: james-of-reno:latest
+    pull_policy: never
+    restart: unless-stopped
+    ports:
+      - "2225:80"
+    env_file:
+      - stack.env
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:2225/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
